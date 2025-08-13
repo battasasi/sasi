@@ -2,29 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Simple HTML & CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Bliss</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
-      margin: 40px;
+      font-family: 'Arial', sans-serif;
+      background-color: #fffaf3;
       color: #333;
     }
-    h1 {
-      color: #007acc;
+
+    header {
+      background-color: #4b2e2e;
+      color: white;
+      padding: 20px 40px;
       text-align: center;
     }
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px auto;
-      line-height: 1.5;
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .content h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #4b2e2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+        padding: 10px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Simple Page</h1>
-  <p>This is a basic example of an HTML page styled with CSS. You can change the colors, fonts, and layout easily.</p>
+  <header>
+    <h1>Coffee Bliss</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Wake Up & Smell the Coffee</h2>
+  </section>
+
+  <section class="content">
+    <h3>About Us</h3>
+    <p>
+      At Coffee Bliss, we craft more than just coffee—we create an experience. Our beans are ethically sourced and freshly roasted, and our baristas pour each cup with love. Whether you're here for a quick espresso or a cozy chat, we welcome you like family.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Coffee Bliss. All rights reserved.</p>
+  </footer>
 </body>
 </html>
