@@ -1,126 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coffee Bliss</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <title>Delicious Bites | Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
 
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fffaf3;
-      color: #333;
-    }
+        header {
+            background-color: #090118;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-    header {
-      background-color: #4b2e2e;
-      color: white;
-      padding: 20px 40px;
-      text-align: center;
-    }
+        nav {
+            background-color: #062b42;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
 
-    header h1 {
-      font-size: 2.5rem;
-    }
+        nav a {
+            color: white;
+          text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            
+        }
 
-    nav {
-      margin-top: 10px;
-    }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 1rem;
-    }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(122, 23, 23);
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px #000;
+        }
 
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
-      background-size: cover;
-      background-position: center;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-    .hero h2 {
-      font-size: 3rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-    }
+        .menu-item {
+            background: rgb(251, 247, 247);
+            padding: 15px;
+            margin: 15px;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: 200px;
+        }
 
-    .content {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            
+            border-radius: 20px;
+        }
 
-    .content h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+        form {
+            max-width: 400px;
+            margin: auto;
+            text-align: left;
+        }
 
-    .content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    footer {
-      background-color: #4b2e2e;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+        button {
+            background-color: #82441b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: arrow;
+        }
 
-    @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 2rem;
-        padding: 10px;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
+        footer {
+            background-color: #e67e22;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Coffee Bliss</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Menu</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Wake Up & Smell the Coffee</h2>
-  </section>
+<header>
+    <h1>sasi's Restaurant</h1>
+    <p>Experience the taste of luxury</p>
+</header>
 
-  <section class="content">
-    <h3>About Us</h3>
-    <p>
-      At Coffee Bliss, we craft more than just coffee—we create an experience. Our beans are ethically sourced and freshly roasted, and our baristas pour each cup with love. Whether you're here for a quick espresso or a cozy chat, we welcome you like family.
-    </p>
-  </section>
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-  <footer>
-    <p>&copy; 2025 Coffee Bliss. All rights reserved.</p>
-  </footer>
+<div class="hero">
+    sassss R<b>e</b><i>s</i>!
+</div>
+
+<section id="menu" class="section">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+        <img src="https://media.istockphoto.com/id/1048400936/photo/whole-italian-pizza-on-wooden-table-with-ingredients.jpg?s=1024x1024&w=is&k=20&c=ZY1c0atquKfpJztOa7kl-6O3iR-4LeaoRO7hWLUJ2sg=" alt="Pizza">
+        <h3>Italian Pizza</h3>
+        <p>150/-</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZXNlYnVyZ2VyfGVufDB8fDB8fHww" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p>200/-</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://media.gettyimages.com/id/1166678093/photo/spaghetti-with-tomato-sauce-shot-on-rustic-wooden-table.jpg?s=612x612&w=gi&k=20&c=L-leGC_okJsww8PNPbvGdNYi7iba-VQo2I5Rx4DJhOI=" alt="Pasta">
+        <h3>Spaghetti Pasta</h3>
+        <p>250/-</p>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
